@@ -33,7 +33,7 @@ function restartGame() {
   hide(".restart");
   hide(".text1");
   hide(".text2");
-  gIntervalBall = setInterval(addBallToRandomCell, 5000);
+  gIntervalBall = setInterval(addBallToRandomCell, 3000);
   gIntervalGlue = setInterval(addglueToRandomCell, 3000);
 }
 function addBallToRandomCell() {
