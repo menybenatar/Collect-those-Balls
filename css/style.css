@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  margin: 5px;
+  margin-top: auto;
+  text-shadow: 2px 2px lightcoral;
+  font-weight: bold;
+  font-size: 56px;
+  padding: 5px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.cell img {
+  width: 30px;
+  height: auto;
+}
+.floor {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.wall {
+  background-color: brown;
+  cursor: no-drop;
+}
+.score {
+  font-size: x-large;
+  /* text-align: center; */
+}
+.score img {
+  width: 25px;
+  height: auto;
+}
+.win {
+  font-size: -webkit-xxx-large;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.playGame {
+  margin: 5px;
+  font-size: x-large;
+  background-color: #03a9f4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.restart {
+  margin: 5px;
+  font-size: x-large;
+  background-color: royalblue;
+  border-radius: 10px;
+  box-shadow: 5px 10px;
+  cursor: pointer;
+}
+.restart:hover {
+  background-color: lightgreen;
+}
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 260px;
+  }
+}
+#footer {
+  position: absolute;
+  bottom: 0px;
+  /* background-color: lightslategrey; */
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: mymove 10s infinite;
+}
