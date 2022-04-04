@@ -69,20 +69,20 @@ h1 {
 .restart:hover {
   background-color: lightgreen;
 }
-@keyframes mymove {
+/* @keyframes mymove {
   from {
     top: 0px;
   }
   to {
     top: 230px;
   }
-}
+} */
 #footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   /* background-color: lightslategrey; */
   width: 100%;
   text-align: center;
-  position: relative;
-  animation: mymove 10s infinite;
+  /* position: relative;
+  animation: mymove 10s infinite; */
 }
