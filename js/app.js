@@ -31,9 +31,9 @@ function restartGame() {
   gIsGlued = false;
   hide(".playGame");
   hide(".restart");
-  hide(".text1");
-  hide(".text2");
-  gIntervalBall = setInterval(addBallToRandomCell, 3000);
+  hide(".score");
+  hide(".win");
+  gIntervalBall = setInterval(addBallToRandomCell, 1000);
   gIntervalGlue = setInterval(addglueToRandomCell, 3000);
 }
 function addBallToRandomCell() {
@@ -170,7 +170,7 @@ function moveTo(i, j) {
       console.log("Collecting!");
       playSound();
       gBallCollected++;
-      if (gBallCollected === 1) show(".text1");
+      if (gBallCollected === 1) show(".score");
 
       document.querySelector("span").innerText = gBallCollected;
       chackVictory();
@@ -216,7 +216,7 @@ function playSound() {
 function Victory() {
   clearInterval(gIntervalGlue);
   clearInterval(gIntervalBall);
-  show(".text2");
+  show(".win");
   show(".restart");
   gIsGlued = true;
 }
